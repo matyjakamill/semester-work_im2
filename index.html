@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Youtube Search</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/Icon_yt.png" type="image/png">
+</head>
+<body>
+  
+  <a href="/"><img src="/images/titel_rose.png" alt="Titel Rose" class="titel_rose" /></a>
+
+  <main>
+
+
+    <div class="input-box">
+      <input
+        type="text"
+        class="center-input"
+        id="search-input"
+        placeholder="Search for videos with more than 5 million views"
+      />
+      <button class="search-button" id="search-btn">
+        <img src="/images/lupe_pink-dark.png" alt="Search Icon" />
+      </button>
+    </div>
+
+  </main>
+
+  <img src="/images/5M+ Views.png" alt="5M+ Views" class="img_views" />
+
+  <template id="notEnoughViews_template">
+    <h2 class="not_found">This video does not have 5 million views &#128556</h2>
+    <div class="go_back">
+      <p>go back and search for another video</p>
+      <a href="/">
+        <img src="images/switch back icon_rose.png" alt="go back icon" class="go-back-icon" />
+      </a>
+    </div>
+    <a href="/"><img src="images/switch back icon_yellow.png" alt="go back icon" class="go-back-icon-corner"></a>
+  
+  </template>
+
+  <script src="/script.js" type="module"></script>
+</body>
+</html>

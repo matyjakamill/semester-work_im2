@@ -81,6 +81,10 @@ body {
   cursor: pointer;
 }
 
+.search-button img:hover {
+  transform: scale(1.1);
+}
+
 .img_views {
   position: relative;
   width: 300px;

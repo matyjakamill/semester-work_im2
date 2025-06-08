@@ -57,7 +57,11 @@ function renderResults(node, data) {
       document.querySelector("main").appendChild(clon);
     }
   } else {
-    node.innerHTML = "<p>No data found.</p>";
+      // append HTML template
+      let temp = document.querySelector("#noDataFound_template");
+      let clon = temp.content.cloneNode(true);
+      document.querySelector("main").appendChild(clon);
+    
   }
 }
 
@@ -96,7 +100,6 @@ async function searchVid() {
     }
 
     document.body.style.backgroundImage = "url(\"images/backround_yellow.png\")";
-    // document.body.style.backgroundColor = "var(--color-light-light-yellow)";
 
     // remove all nodes inside the main node
     while (main.firstChild) {
